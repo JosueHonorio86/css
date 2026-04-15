@@ -1,0 +1,124 @@
+/*layiut principal*/
+.Wrapper{
+    height: 100vh;
+    width: 100vw;
+}
+/*lado esquerdo*/
+.container-left{
+    display: inline-block;
+    width: 60%;
+}
+
+/*lado direito*/
+.container-right{
+    display: inline-block;
+    background-color: rgba(96, 93, 125, 0.16);
+    height: 100vh;
+    width: 40%;
+    position: absolute;
+}
+
+/*imagem*/
+img{
+    position: relative;
+    top: 25%;
+    right: 130px;
+    height: auto;
+    width: 500px;
+}
+
+/*título*/
+h1{
+    font-size: 70px;
+    line-height: 80px;
+}
+
+/*parágrafo*/
+p{
+    font-size: 28px;
+    line-height: 48px;
+    opacity: 0.6;
+}
+
+/*botão*/
+button{
+    width: 269px;
+    height: 32px;
+    background: #9999ea;
+    box-shadow: 0px 10px 24px rgba(0,191,255,0.4)
+    border: none;
+    border-radius:30px;
+    font-size:24px;
+    line-height:26px;
+    text-align:center;
+    color:#ffffff;
+    cursor: pointer;
+}
+
+/*houvver*/
+button:houver{
+    opacity: .8;
+}
+
+/*clique*/
+button:active{
+    opacity: .5;
+}
+
+/*links*/
+a{
+    font-size: 28px;
+    line-height: 41px;
+    color: #5d5d7d;
+    margin-right: 41px;
+}
+
+a:nth-child(2){
+    opacity: 0.4;
+}
+
+a:houver{
+    opacity: 0.4;
+}
+
+/*header*/
+header{
+    margin: 24px 0 57px;
+}
+
+/*responsivo*/
+@media screen and (max-width:900px){
+    .Wrapper{
+        flex-direction: column;
+    }
+    .container-left{
+        width: 100%;
+        height: 50%;
+        padding: 0%;
+        text-align: center;
+    }
+    .container-right{
+        display: block;
+        height: auto;
+        width: 100%;
+        position: static;
+    }
+    img{
+        position: static;
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+    h1{
+        font-size: 36px;
+        line-height: 52px;
+    }
+    p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    button{
+        width: 90%;
+        min-width: 250px;
+    }
+}
